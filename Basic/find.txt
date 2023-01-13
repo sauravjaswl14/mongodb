@@ -1,0 +1,13 @@
+db.books.find()
+
+//filter
+db.books.find({author:"Terry Pratchett",rating: 7})
+
+
+//which fields we want back
+db.books.find({author:"Brandon Sanderson"},{title: 1, author: 1})
+
+//No filter with specific fields
+db.books.find({},{title:1,author:1})
+
+db.books.find().sort({title: 1})

@@ -1,0 +1,89 @@
+db.posts.insertMany([
+{
+	title: 'Post Two',
+	body: 'Body of post two',
+	category: 'Technology',
+	date: Date()
+},
+{
+	title: 'Post Three',
+	body: 'Body of post three',
+	category: 'News',
+	date: Date()
+},
+{
+	title: 'Post Four',
+	body: 'Body of post three',
+	category: 'Entertainment',
+	date: Date()
+}
+])
+
+
+db.books.insertMany([
+{
+	title:"Name of the wind",
+	author:"Patrick Rothfuss",
+	pages: 600,
+	genres: ["fantasy","magical"],
+	rating: 9
+},
+{
+	title: "The Final Empire",
+	author: "Brandon Sanderson",
+	pages: 450,
+	genres: ["Thriller","crime"],
+	rating:8
+},
+{
+	title:"The way of Kings",
+	author: "Brandon Sanderson",
+	pages: 350,
+	rating: 9
+}])
+
+
+db.books.insertMany([
+{
+	title: "The Way of Kings",
+	author: "Brandon Sanderson",
+	rating: 9,
+	pages: 400,
+	genres: ['fantasy','thriller','crime'],
+	reviews: [
+	{name: "Yoshi", body: "great book!!"},
+	{name: "mario", body: "so so"}
+	]
+},
+{
+	title: "The Light Fantastic",
+	author: "Terry Pratchett",
+	pages: 250,
+	rating: 7,
+	genres: ['fantasy','magic'],
+	reviews: [{name: "luigi", body: "it was pretty"},{name: "bowser", body: "loved it!!"}]
+},
+{
+	title: "The Name of the wind",
+	author: "Patrick Rothfuss",
+	pages: 500,
+	rating: 10,
+	genres: ['fantasy'],
+	reviews: [{name: "peach", body: "one of my favs"}]
+},
+{
+	title: 'The Color of Magic',
+	authors: 'Terry Pratchett',
+	pages: 350,
+	rating: 8,
+	genres: ['fantasy','magic'],
+	reviews: [{name: 'luigi',body:"it was ok"},{name: 'bowser', body: 'really good'}]
+},
+{
+	title: '1984',
+	author: 'George Orwell',
+	pages: 300,
+	rating: 7,
+	genres:['sci-fi','dystopian','fantasy'],
+	reviews: [{name: 'peach', body: 'not my cup of tea'},{name:'mario',body:'meh'}]
+}])

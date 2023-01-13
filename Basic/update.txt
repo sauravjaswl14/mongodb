@@ -1,0 +1,8 @@
+db.posts.update({title:"Post Two"},
+{title:'Post two',
+ body:'this is new post two',
+ date: Date()
+},
+{
+	upsert:true
+})
